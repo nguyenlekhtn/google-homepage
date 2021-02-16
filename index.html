@@ -7,8 +7,9 @@
     }
 
     #topPanel {
-        box-sizing: border-box;
+        align-items: center;
         height: 60px;
+        padding: 6px;
     }
 
     .columnContainer {
@@ -26,15 +27,52 @@
     }
 
     #formContainer {
-        height: 160px;
+        max-height: 160px;
         padding: 20px;
         align-items: center;
     }
 
-    #logo {
+    #formContainer {
+        margin: 0 auto;
+    }
+
+    .borderBox {
+        box-sizing: border-box;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #navigation {
+        height: 48px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
 
     }
 
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        padding-left: 15px;
+        text-decoration: none;
+
+
+    }
+
+    li a:hover{
+        text-decoration: underline;
+    }
 
 
 
@@ -50,12 +88,20 @@
 
 
 
-        <div id="container" class="columnContainer">
+        <div id="container" class="columnContainer borderBox">
             <div id="topPanel" class="rowContainer">
+                <div id="navigation">
+                    <ul>
+                        <li><a href="">Gmail</a></li>
+                        <li><a href="">Images</a></li>
+                    </ul>
+                </div>
+
+
             </div>
 
 
-            <div id="logoContainer" class="columnContainer">
+            <div id="logoContainer" class="columnContainer borderBox">
                 <div id="logo">
                     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
 
@@ -64,15 +110,19 @@
 
             <div id="formContainer" class="columnContainer">
                 <form>
-                    <div id="searchBox">
-                        <input type="text" name="searchInput">
-                    </div>
-
-                    <div id="submitButton">
-                        <input type="submit" id="searchButton" value="Google Search">
-                        <input type="submit" id="luckyButton" value="I'm feeling lucky">
-                
-                    </div>
+                    <div id="formContainer2>
+                        <div id="formContainer3">
+                            <div id="searchBox">
+                                <input type="text" name="searchInput">
+                            </div>
+        
+                            <div id="submitButton">
+                                <input type="submit" id="searchButton" value="Google Search">
+                                <input type="submit" id="luckyButton" value="I'm feeling lucky">
+                        
+                            </div>
+                        </div>
+                    </div">
                 </form>
             </div>
 
