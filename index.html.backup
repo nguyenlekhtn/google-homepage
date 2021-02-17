@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<style>
+
+    body {
+        background-color: #fff;
+    }
+
+    body, input, button {
+        font-size: 14px;
+        font-family: arial, sans-serif;
+        color: #222;
+    }
+
+
+    html, body {
+        min-width: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .topNavContainer {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 6px;
+    }
+
+    #topPanel2{
+        height: 48px;
+        min-width: 100%;
+    }
+
+    #navigation {
+        height: 48px;
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .logoContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 92px;
+        max-height: 290px;
+        height: calc(100% - 560px);
+    }
+
+    #formContainer {
+        max-height: 160px;
+        padding: 20px;
+        align-items: center;
+        max-height: 160px;
+    }
+
+    #formContainer2 {
+        margin: 0 auto;
+    }
+
+    .borderBox {
+        box-sizing: border-box;
+    }
+
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        padding-left: 15px;
+        text-decoration: none;
+
+
+    }
+
+    li a:hover{
+        text-decoration: underline;
+    }
+
+    .bottomContainer {
+        background-color: #f2f2f2;
+
+    }
+
+    .country {
+        padding: 15px 30px;
+        border-bottom: 1px solid black;
+        color: rgba(0, 0, 0, 0.54);
+
+    }
+
+
+    .botBotContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+
+    .linkBottomBox{
+        display:box;
+        padding: 15px;
+
+    }
+
+
+
+</style>
+
+<html>
+    <head>
+        <title>Google Homepage Project</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+
+
+
+        <div class="container">
+            <div class="topNavContainer  borderBox">
+                <div id="topPanel2">
+                    <div id="navigation">
+                        <ul>
+                            <li><a href="">Gmail</a></li>
+                            <li><a href="">Images</a></li>
+                        </ul>
+                </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="borderBox logoContainer">
+                <div id="logo">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+
+                </div>
+            </div>
+
+            <div id="formContainer" class="columnContainer borderBox">
+                <form>
+                    <div id="formContainer2>
+                        <div id="formContainer3">
+                            <div id="searchBox">
+                                <input type="text" name="searchInput">
+                            </div>
+        
+                            <div id="submitButton">
+                                <input type="submit" id="searchButton" value="Google Search">
+                                <input type="submit" id="luckyButton" value="I'm feeling lucky">
+                        
+                            </div>
+                        </div>
+                    </div">
+                </form>
+            </div>
+
+            <div class="borderBox"></div>
+
+            <div class="borderBox bottomContainer">
+                <div class="country">
+                    Vietnam
+                </div>
+
+                <div class="botBotContainer"> 
+                    <div class="navbarLeft">
+                        <a href="" class="linkBottomBox">About</a>
+                        <a href="" class="linkBottomBox">Advertising</a>
+                        <a href="" class="linkBottomBox">Business</a>
+                        <a href="" class="linkBottomBox">How Search works</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>       
+
+    </body>
+
+</html>
