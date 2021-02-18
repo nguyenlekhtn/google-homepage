@@ -1,5 +1,12 @@
 /* style.css */
-html, body, input {
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+body, input {
 font-size: 14px;
 }
 
@@ -12,7 +19,8 @@ font-size: 14px;
 .container {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    height: 100%;
+    
 }
 
 .container1 {
@@ -20,7 +28,28 @@ font-size: 14px;
     flex-direction: row;
     height: 48px;
     padding: 6px;
+    justify-content: flex-end;
 }
+
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.topnav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    color: rgba(0,0,0,0.87);
+  }
+
+.topnav a:hover {
+    text-decoration: underline;
+}
+
 
 .container2 {
     display: flex;
@@ -90,8 +119,6 @@ font-size: 14px;
 }
 
 .container4 {
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
 }
 
@@ -107,20 +134,43 @@ font-size: 14px;
 }
 
 .container5 {
-    justify-self: flex-end;
-
+    margin-top: auto;
     display: flex;
     flex-direction: column;
+    /* flex-grow: 0; */
     background-color: #f2f2f2;
     
 }
 
 .countryCTR {
     padding: 15px 30px;
-    height: 48px;
+    border-bottom: 1px solid #dadce0;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
 }
 
 .bottomNavCTR {
-    padding: 30px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nav a {
+    display: block;
+    color: rgba(0,0,0,.54);
+    padding: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    
+  }
+
+.nav a:hover {
+    text-decoration: underline;
+}
