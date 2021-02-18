@@ -1,0 +1,126 @@
+/* style.css */
+html, body, input {
+font-size: 14px;
+}
+
+.box {
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    padding: 6px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 92px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 94px;
+}
+
+.container3 > form {
+    width: 584px;
+    margin: 0 auto;
+    
+}
+
+.searchContainer{
+    height: 46px;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    margin: 0 auto;
+
+}
+
+#searchBox {
+
+    border: none;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    background-image: url('images/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    box-sizing: border-box;
+}
+
+.searchContainer:hover {
+    box-shadow: 2px 2px 2px 0px #dfe1e5, 
+                -2px -2px 2px 0px #dfe1e5;
+}
+
+.container3 > form > .buttonCont {
+    padding-top: 16px;
+}
+
+.buttonCont > .buttonGroup {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.buttonGroup > .button {
+    border-style: none;
+    border-radius: 5px; 
+    height: 36px;
+    padding: 0  16px;
+    margin: 11px 4px;
+    color: #3c4043;
+}
+
+.buttonGroup > .button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container4 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.languageContainer {
+    margin: 24px;
+    text-align: center;
+
+}
+
+.language {
+    display: inline-block;
+    margin: auto;
+}
+
+.container5 {
+    justify-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    
+}
+
+.countryCTR {
+    padding: 15px 30px;
+    height: 48px;
+}
+
+.bottomNavCTR {
+    padding: 30px;
+}
+

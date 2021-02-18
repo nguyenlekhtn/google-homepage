@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 
-<style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
 
-    .container1 {
-        display: flex;
-        flex-direction: row;
-        height: 48px;
-        padding: 6px;
-    }
 
-    .container2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 92px;
-    }
-
-    .container3{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-</style>
 
 <html>
     <head>
         <title>Google Homepage Project</title>
-        <meta charset="utf-8"
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css" type="text/css">
+ 
     </head>
     <body>
         <div class="container">
-            <div class="container1">
-
+            <div class="container1 box">
+                <div class="topnav">
+                    <a href="#gmail">Gmail</a>
+                    <a href="#images">Images</a>
+                    <a href="#contact">Contact</a>
+                  </div>
             </div>
 
-            <div class="container2">
+            <div class="container2 box">
                 <div class="logo">
                     <img src="images/googlelogo_color_272x92dp.png" alt="Google logo">
                 </div>
 
             </div>
 
-            <div class="container3">
-                <div class="formContainer">
-                    <form>
-                        <input type="text" name="searchInput" required>
-                        
-                        <div class="buttonCont">
-                            <input type="submit" value="Google Search">
-                            <input type="submit" value="I'm feeling lucky">
+            <div class="container3 box">
+                
+                <form>
+                    
+                    <div class="searchContainer">
+                        <input id="searchBox" type="text" name="searchInput" required autofocus	>
+                    </div>
+                    
+                    
+                    <div class="buttonCont">
+                        <div class="buttonGroup">
+                            <input type="submit" value="Google Search" class="button">
+                            <input type="submit" value="I'm feeling lucky" class="button">
                         </div>
-                    </form>
-                </div>
+                    </div>
+                
+                </form>
 
             </div>
 
-            <div class="container4">
+            <div class="container4 box">
+                <div class="languageContainer">
+                    <div class="language">
+                        Google offered in: 
+                        <a href="#">Tiếng Việt</a>
+                        <a href="#">Français</a>
+                        <a href="#">中文（繁體）</a>
+                          
 
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container5 box">
+                <div class="countryCTR box">
+                    Vietnam
+                </div>
+
+                <div class="bottomNavCTR">
+                    <a href="#About">About</a>
+                    <a href="#Advertising">Advertising</a>
+                    <a href="#Business">Business</a>
+                    <a href="#How_Search_Works">How Search works</a>
+                    <a href="#Privacy">Privacy</a>
+                    <a href="#Terms">Terms</a>
+
+                </div>
             </div>
         </div>
     </body>
